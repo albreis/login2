@@ -1,8 +1,96 @@
-.plugin-name-here *
-  box-sizing border-box
-.plugin-name-here
-  font-family 'Open Sans', sans-serif
-  color #000
+:focus
+  outline none
+body
+  overflow-x hidden
   margin 0
+  padding 0
+.login-2 *
+  box-sizing border-box
+.login-2
+  font-family 'Open Sans', sans-serif
+  color #111
+  margin 0
+  display flex
+  height 100vh
+  @media all and (max-width: 800px)
+    flex-wrap wrap
+    flex-flow column-reverse
+    height auto
   h1
     margin 0
+  .left
+    width 30%
+    display flex
+    align-items center
+    @media all and (max-width: 800px)
+      width 100%
+    .left-inner
+      width 100%
+      border-left 5px solid #912b2b
+      padding 20px 0 40px 0
+      @media all and (max-width: 800px)
+        border-left none
+        border-bottom 5px solid #912b2b
+    form
+      padding 0 15px
+      width 100%
+      max-width 250px
+      margin auto
+      display block
+      .header
+        display flex
+        justify-content space-between
+        align-items baseline
+        a
+          font-size 12px
+          text-decoration none
+          color #111
+      h3
+        font-size 24px
+        font-weight normal
+        margin 0 0 15px 0
+      input
+        border-radius 8px
+        background #c7c7c7
+        color #424242
+        margin-bottom 10px
+        border none
+        height 30px
+        width 100%
+        padding 10px
+        &:placeholder
+          color inherit
+          font-size inherit
+      button
+        border-radius 8px
+        background #912b2b
+        border none
+        height 30px
+        width 100%
+        color #fff
+        font-size 16px
+  .right
+    width 70%
+    background #912b2b
+    display flex
+    justify-content center
+    padding 50px 70px
+    color #fff
+    @media all and (max-width: 800px)
+      width 100%
+      padding 30px 15px
+    .logo
+      display block
+      margin 0 auto 30px auto
+      text-align center
+    .title
+      h2
+        font-weight normal
+        text-align center
+        font-size 28px
+    .text
+      font-size 1.7vw
+      line-height 1.9vw
+      @media all and (max-width: 800px)
+        font-size 1rem
+        line-height 1.3rem
